@@ -10,12 +10,12 @@ export function Header() {
           <img src={logoCoffeImg} />
 
           <HeaderButtonContainer>
-            <HeaderButton>
+            <HeaderButton variant="purple">
               <MapPin size={20} weight="fill" />
               Jundiaí, SP
             </HeaderButton>
 
-            <HeaderButton>
+            <HeaderButton variant="yellow">
               <ShoppingCart size={20} />
             </HeaderButton>
           </HeaderButtonContainer>

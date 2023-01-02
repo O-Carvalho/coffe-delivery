@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 export const HeaderContainer = styled.header`
   height: 6.5rem;
@@ -21,7 +21,11 @@ export const HeaderButtonContainer = styled.div`
   gap: 0.75rem;
 `;
 
-export const HeaderButton = styled.button`
+interface HeaderButtonProps {
+  variant: "purple" | "yellow";
+}
+
+export const HeaderButton = styled.button<HeaderButtonProps>`
   display: flex;
   align-items: center;
   justify-content: center;
@@ -33,4 +37,17 @@ export const HeaderButton = styled.button`
   padding: 0 0.5rem;
   position: relative;
   font-size: ${({ theme }) => theme.textSizes["text-regular-s"]};
+
+  ${({ theme, variant }) => css`
+    background: ${theme.colors[`brand-${variant}-light`]};
+    color: ${theme.colors[`brand-${variant}-dark`]};
+  `}
+
+  ${({ theme, variant }) =>
+    variant === "purple" &&
+    css`
+      svg {
+        color: ${theme.colors["brand-purple"]};
+      }
+    `}
 `;

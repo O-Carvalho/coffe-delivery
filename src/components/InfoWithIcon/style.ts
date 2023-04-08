@@ -6,4 +6,19 @@ export const InfoWithIconContainer = styled.div`
   gap: 0.75rem;
 `;
 
-export const IconContainer = styled.div``;
+interface IconContainerProps {
+  iconBg: string;
+}
+
+export const IconContainer = styled.div<IconContainerProps>`
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+
+  background: ${({ iconBg }) => iconBg};
+  color: ${({ theme }) => theme.colors["base-white"]};
+
+  display: flex;
+  aling-itens: center;
+  justify-content: center;
+`;

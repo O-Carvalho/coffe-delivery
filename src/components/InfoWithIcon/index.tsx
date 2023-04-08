@@ -4,12 +4,14 @@ import { IconContainer, InfoWithIconContainer } from "./style";
 interface InfoWithIconProps {
   icon: ReactNode;
   text: string | ReactNode;
+  iconBg: string;
 }
 
-export function InfoWithIcon({ icon }: InfoWithIconProps) {
+export function InfoWithIcon({ icon, text, iconBg }: InfoWithIconProps) {
   return (
     <InfoWithIconContainer>
-      <IconContainer>{icon}</IconContainer>
+      <IconContainer iconBg={iconBg}>{icon}</IconContainer>
+      {typeof text === "string" ? <p>{text}</p> : text}
     </InfoWithIconContainer>
   );
 }

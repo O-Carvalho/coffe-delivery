@@ -13,6 +13,8 @@ export function OurCoffees() {
         <CoffeeCard />
         <CoffeeCard />
         <CoffeeCard />
+        <CoffeeCard />
+        <CoffeeCard />
       </CoffeList>
     </OurCoffeesContainer>
   );

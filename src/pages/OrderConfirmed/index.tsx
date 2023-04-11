@@ -29,6 +29,7 @@ export function OrderConfirmedPage() {
               </RegularText>
             }
           />
+
           <InfoWithIcon
             icon={<Clock weight="fill" />}
             iconBg={colors["brand-yellow"]}
@@ -40,6 +41,7 @@ export function OrderConfirmedPage() {
               </RegularText>
             }
           />
+
           <InfoWithIcon
             icon={<CurrencyDollar weight="fill" />}
             iconBg={colors["brand-yellow"]}

@@ -19,6 +19,6 @@ export const IconContainer = styled.div<IconContainerProps>`
   color: ${({ theme }) => theme.colors["base-white"]};
 
   display: flex;
-  aling-itens: center;
+  align-items: center;
   justify-content: center;
 `;

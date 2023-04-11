@@ -24,8 +24,8 @@ export const OrderDetailsContainer = styled.div`
   background: ${({ theme }) => theme.colors["base-background"]};
   min-width: 32rem;
   display: flex;
-  gap: 2rem;
   flex-direction: column;
+  gap: 2rem;
 
   &::before {
     content: "";

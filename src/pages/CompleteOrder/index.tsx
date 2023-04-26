@@ -46,6 +46,7 @@ export function CompleteOrder() {
     navigate("/orderConfirmed", {
       state: data,
     });
+    console.log(data);
     cleanCart();
   }
 
